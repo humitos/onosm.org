@@ -1,3 +1,4 @@
-# onosm.org
+# elblogdehumitos.com.ar/osm
 
-An easy way to get a business on to OpenStreetMap.
+Una forma muy sencilla de agregar un punto a OpenStreetMap siendo un
+usuario inexperto y sin cuenta de OSM.

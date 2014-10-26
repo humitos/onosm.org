@@ -86,7 +86,7 @@ $(window).on('hashchange', function() {
 $("#collect-data-done").click(function() {
     location.hash = '#done';
 
-    var note_body = "onosm.org submitted note from a business:\n" +
+    var note_body = "elblogdehumitos.com.ar/osm/ submitted note from a business:\n" +
         "name: " + $("#name").val() + "\n" +
         "phone: " + $("#phone").val() + "\n" +
         "website: " + $("#website").val() + "\n" +

@@ -1,5 +1,5 @@
 var findme_map = L.map('findme-map')
-    .setView([37.7, -97.3], 3),
+    .setView([-24.867, -61.260], 4),
     osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     osmAttrib = 'Map data © OpenStreetMap contributors',
     osm = L.tileLayer(osmUrl, {minZoom: 2, maxZoom: 18, attribution: osmAttrib}).addTo(findme_map),
@@ -28,7 +28,7 @@ $("#category").select2({
 
 $("#find").submit(function(e) {
     e.preventDefault();
-    $("#couldnt-find").hide();
+    // $("#couldnt-find").hide();
     var address_to_find = $("#address").val();
     if (address_to_find.length === 0) return;
     var qwarg = {
@@ -36,7 +36,7 @@ $("#find").submit(function(e) {
         q: address_to_find
     };
     var url = "http://nominatim.openstreetmap.org/search?" + $.param(qwarg);
-    $("#findme h4").text("Searching...");
+    $("#findme h4").text("Buscando...");
     $("#findme").addClass("loading");
     $.getJSON(url, function(data) {
         if (data.length > 0) {
@@ -52,10 +52,10 @@ $("#find").submit(function(e) {
             findme_marker.setOpacity(1);
             findme_marker.setLatLng([chosen_place.lat, chosen_place.lon]);
 
-            $('#instructions').html('We found it! Click and drag the marker to sit on your business, then you are ready to <a href="#details">add details to your business listing</a>.');
+            $('#instructions').html('<strong>¡Lo encontramos!</strong> Hacé click en el marcador y ubicalo donde se encuentre tu negocio. <br/> Luego estás listo para <a href="#details">agregar los detalles</a>.');
             $('.step-2 a').attr('href', '#details');
         } else {
-            $('#instructions').html('<strong>We couldn\'t find your address.</strong> Try searching for your street or city without the address.');
+            $('#instructions').html('<strong>No pudimos encontrar esa dirección</strong>. <br/> Probá buscando la calle o la ciudad sin la dirección exacta.');
         }
         $("#findme").removeClass("loading");
     });

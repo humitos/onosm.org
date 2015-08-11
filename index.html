@@ -44,7 +44,7 @@
                 <div class='col12'>
                     <div class='pad1'>
                         <form id='find'>
-                            <input class='col8' id='address' placeholder='Bartolomé Mitre 77, Salta, Argentina' />
+                            <input class='col8' id='address' placeholder='Bartolomé Mitre 77, Salta, Argentina' required />
                             <button class='col4' id='findme'>Buscar</button>
                         </form>
                     </div>
@@ -62,21 +62,25 @@
                 <div class='col12'>
                     <div class='clearfix col12'>
                         <label for='category'>Categoría</label>
-                        <input id='category' data-placeholder='Selecciona una categoría...' class='col10' />
+                        <input id='category' data-placeholder='Selecciona una categoría...' class='col10' required />
                     </div>
                     <div class='col6'>
                         <label for='name'>Nombre</label>
-                        <input id='name' type='text' placeholder='Hostel Paraná' />
+                        <input id='name' type='text' placeholder='Hostel Paraná' required />
                         <label for='phone'>Número de Teléfono</label>
-                        <input id='phone' type='text' placeholder='+54 0343 4444444' />
+                        <input id='phone' type='text' placeholder='+54 0343 444-4444' />
                     </div>
                     <div>
                         <label for='website'>Web</label>
                         <input id='website' type='text' placeholder='http://www.example.com/' />
                         <label for='twitter'>Twitter</label>
-                        <input id='twitter' type='text' placeholder='@example' />
+                        <input id='twitter' type='text' placeholder='@humitos' />
+                        <label for='facebook'>Twitter</label>
+                        <input id='facebook' type='text' placeholder='fb.com/Humitos' />
                         <label for='opening_hours'>Horario</label>
-                        <input id='opening_hours' type='text' placeholder='Lunes-Viernes 10am a 8pm' />
+                        <input id='opening_hours' type='text' placeholder='Lun-Vie 10:00-20:00' />
+                        <label for='note'>Horario</label>
+                        <input id='note' type='text' placeholder='Agrega algún detalle que no esté arriba' />
                     </div>
                     <button class='col12' id='collect-data-done'><h4>Hecho</h4></button>
                 </div>

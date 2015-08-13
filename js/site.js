@@ -91,8 +91,10 @@ $("#collect-data-done").click(function() {
         "phone: " + $("#phone").val() + "\n" +
         "website: " + $("#website").val() + "\n" +
         "twitter: " + $("#twitter").val() + "\n" +
+        "facebook: " + $("#facebook").val() + "\n" +
         "hours: " + $("#opening_hours").val() + "\n" +
         "category: " + $("#category").val() + "\n" +
+        "note: " + $("#note").val() + "\n" +
         "address: " + $("#address").val(),
         latlon = findme_marker.getLatLng(),
         qwarg = {

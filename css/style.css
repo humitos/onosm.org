@@ -106,6 +106,9 @@ a {
   a:active {
     color:#9ed485;
     }
+    label a{
+        font-size:10px;
+    }
 
 abbr {
   border-bottom:1px dotted #000;

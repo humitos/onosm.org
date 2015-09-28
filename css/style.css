@@ -200,8 +200,8 @@ label {
   }
 select,
 textarea,
-input[type=text]
-input[type=url]
+input[type=text],
+input[type=url],
 input[type=tel]{
   display:inline-block;
   height:30px;
